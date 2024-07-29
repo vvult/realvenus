@@ -1,5 +1,3 @@
-local module = {}
-
 local required = {}
 local nil_instances = {}
 local env = {}
@@ -157,7 +155,6 @@ local function cloneref(i)
 	return i
 end
 
-module.run = function()
 	if IY_LOADED and not _G.IY_DEBUG == true then
 		-- error("Infinite Yield is already running!",0)
 		return
@@ -12291,7 +12288,4 @@ module.run = function()
 		Credits:Destroy()
 		IntroBackground:Destroy()
 		minimizeHolder()
-	end)()
 end
-
-return module
